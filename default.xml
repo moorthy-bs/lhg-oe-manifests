@@ -13,9 +13,7 @@
   <project name="96boards/meta-rpb" path="layers/meta-rpb" remote="github"/>
   <project name="andrey-konovalov/meta-freescale" path="layers/meta-freescale" remote="github" revision="mmwg-master"/>
   <project name="git/meta-intel" path="layers/meta-intel" remote="yocto"/>
-  <project name="git/meta-ti" path="layers/meta-ti" remote="yocto">
-    <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
-  </project>
+  <project name="git/meta-ti" path="layers/meta-ti" remote="yocto"/>
 
   <project name="OSSystems/meta-browser" path="layers/meta-browser" remote="github"/>
   <project name="git/meta-virtualization" path="layers/meta-virtualization" remote="yocto"/>
@@ -27,8 +25,12 @@
 
   <project name="WebPlatformForEmbedded/meta-wpe" path="layers/meta-wpe" remote="github" revision="thud" />
 
-  <project name="openembedded/bitbake" path="bitbake" remote="github"/>
   <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="thud"/>
+  <project name="openembedded/meta-backports" path="layers/meta-backports" remote="linaro" revision="thud"/>
+
+  <project name="openembedded/bitbake" path="bitbake" remote="github"/>
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="thud"/>
-  <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="thud"/>
+  <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="thud">
+    <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
+  </project>
 </manifest>
