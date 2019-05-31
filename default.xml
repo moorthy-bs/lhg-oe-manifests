@@ -10,16 +10,16 @@
   <default revision="master" sync-j="4"/>
   <!-- machine specific content, aka Board Support Packages -->
   <project name="96boards/meta-96boards" path="layers/meta-96boards" remote="github"/>
-  <project name="96boards/meta-rpb" path="layers/meta-rpb" remote="github"/>
+  <project name="96boards/meta-rpb" path="layers/meta-rpb" remote="github" revision="thud"/>
   <project name="andrey-konovalov/meta-freescale" path="layers/meta-freescale" remote="github" revision="mmwg-master"/>
   <project name="git/meta-intel" path="layers/meta-intel" remote="yocto"/>
   <project name="git/meta-ti" path="layers/meta-ti" remote="yocto"/>
 
-  <project name="OSSystems/meta-browser" path="layers/meta-browser" remote="github"/>
-  <project name="git/meta-virtualization" path="layers/meta-virtualization" remote="yocto"/>
-  <project name="linaro-mmwg/meta-lhg" path="layers/meta-lhg" remote="github"/>
+  <project name="OSSystems/meta-browser" path="layers/meta-browser" remote="github" revision="thud"/>
+  <project name="git/meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="thud"/>
+  <project name="linaro-mmwg/meta-lhg" path="layers/meta-lhg" remote="github" revision="thud"/>
   <project name="kraj/meta-clang" path="layers/meta-clang" remote="github"/>
-  <project name="meta-qt5/meta-qt5" path="layers/meta-qt5" remote="github"/>
+  <project name="meta-qt5/meta-qt5" path="layers/meta-qt5" remote="github" revision="thud"/>
   <project name="meta-rust/meta-rust" path="layers/meta-rust" remote="github"/>
   <project name="ndechesne/meta-qcom" path="layers/meta-qcom" remote="github"/>
 
@@ -28,7 +28,7 @@
   <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="thud"/>
   <project name="openembedded/meta-backports" path="layers/meta-backports" remote="linaro" revision="thud"/>
 
-  <project name="openembedded/bitbake" path="bitbake" remote="github"/>
+  <project name="openembedded/bitbake" path="bitbake" remote="github" revision="1.40"/>
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="thud"/>
   <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="thud">
     <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
